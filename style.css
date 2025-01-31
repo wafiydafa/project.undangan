@@ -1,0 +1,283 @@
+:root {
+    --pink: #f36ba3; /* Warna utama */
+    --bg: #0a0a0a; /* Warna latar belakang */
+    --text: #ffffff; /* Warna teks */
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Bayangan elemen */
+}
+
+body {
+    min-height: 4000px;
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    color: var(--bg); /* Warna teks default */
+    background-color: var(--text); /* Warna latar belakang default */
+    margin: 0rem;
+    padding: 0rem;
+    line-height: 1.6;
+}
+
+.hero::before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+ 
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: "Lavishly Yours", serif;
+    font-size: 6rem;
+    color: var(--pink);
+    margin: 0.5rem 0;
+}
+
+.hero h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.hero a .info a {
+    color: var(--pink);
+    background-color: white;
+    border: 2px solid var(--pink);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.hero a:hover{
+    background-color: var(--pink);
+    color: white;
+    transform: scale(1.05); /* Efek zoom kecil saat hover */
+}
+
+.info a:hover{
+    background-color: var(--pink);
+    color: white;
+    transform: scale(1.05); /* Efek zoom kecil saat hover */
+}
+
+/* Countdown Styling */
+#countdown {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.simply-countdown-circle .simply-section {
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.simply-amount {
+    color: var(--pink); /* Ubah ini ke warna yang diinginkan */
+    font-weight: bold; /* Tambahkan efek seperti tebal */
+  }
+
+
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: "Lavishly Yours", serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.mynavbar .nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.home {
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-size: 100%;
+    margin-top: -5.64rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    color: var(--pink);
+    font-family: "Lavishly Yours", serif;
+    font-size: 5rem;
+    font-weight: 300px;
+}
+
+.home h3 {
+    color: #545454;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1rem;
+    color: #666
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3{
+    font-family: "Lavishly Yours", serif;
+    font-size: 2.4rem;
+    color: var(--pink)
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--pink)
+}
+
+.info {
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2 {
+    color: var(--pink);
+    font-family: "Lavishly Yours", serif;
+    font-size: 5rem;
+    font-weight: 200px;
+}
+
+.info .alamat {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info .deskripsi {
+    font-size: 1rem; 
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: rgba(255,255,255,0.2) !important;
+    color: white !important;
+    border: 1px solid #c2c1c1;
+}
+
+.info .card-header{
+    border-bottom: 1px solid #c2c1c1;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+
+.info .card-footer{
+    border-top: 1px solid #c2c1c1;
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+/* media query */
+/* Extra Large */
+@media (max-width: 1200px){
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+
+    }
+}
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+.simply-countdown-circle .simply-section {
+    padding: 70px;
+}
+.home .heart {
+    display: none   ;
+
+}
+}
+/* tab */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    .simply-countdown-circle .simply-section {
+        padding: 60px;
+        margin: 5px;
+}
+.mynavbar .nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* hp */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+.simply-countdown-circle .simply-section {
+    padding: 45px;
+    margin: 3px;
+} 
+}
+}
